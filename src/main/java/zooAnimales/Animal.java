@@ -21,24 +21,22 @@ public class Animal {
     public static int getTotalAnimales() {
         return totalAnimales;
     }
-    public static String totalPorTIpo(){
+    public static String totalPorTipo(){
         String cadena ="Mamiferos: " + Mamifero.cantidadMamiferos() + "\n" + "Aves: "+  Ave.cantidadAves() + "\n" + "Reptiles: " + Reptil.cantidadReptiles() + "\n" + "Peces: " + Pez.cantidadPeces() + "\n" + "Anfibios: " + Anfibio.cantidadAnfibios();
         return cadena;
     }
     public static void setTotalAnimales(int totalAnimales) {
         Animal.totalAnimales = totalAnimales;
     }
-    public String toString (){
+
+    public String toString() {
+
         if (zona != null) {
-            String salida = "Mi nombre es " + nombre + ", tengo una edad de " +
-                    edad + ", habito en " + habitat + "y mi genero es " + genero +
-                    ", la zona en la que me ubico es " + zona.getNombre() + ", en el" +
-                    zona.getZoo();
+            String salida = "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero + ", la zona en la que me ubico es" + zona.getNombre() + ", en el zoo" + zona.getZoo() + "" ;
             return salida;
         }
-        String salida = "Mi nombre es " + nombre + ", tengo una edad de " +
-                edad + ", habito en " + habitat + "y mi genero es " + genero;
-        return  salida;
+        String salida = "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero;
+        return salida;
     }
     public String movimiento(){
         return "desplazarse";
@@ -75,3 +73,4 @@ public class Animal {
     }
 
 }
+
