@@ -46,6 +46,7 @@ public class TestRetornos {
 		Ave an2 = new Ave("paloma", 5, "ciudad", "F", "gris");
 		boolean ok = false;
 		String  comp = "Mi nombre es paloma, tengo una edad de 5, habito en ciudad y mi genero es F";
+
 		if(an2.toString().equals(comp)) {
 			ok = true;
 		}
